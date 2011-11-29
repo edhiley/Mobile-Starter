@@ -14,28 +14,23 @@
 <div data-role="page" id="app-template" data-theme="a">
 	
 	<div data-role="header" data-position="fixed">
-		<h1>Mobile Starter</h1>
+		<h1>NHS Evidence - Mobile</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">
-		<ul data-role="listview" class="ui-listview">
-			<li class="ui-li ui-li-static ui-body-a">
-				<h3 class="ui-li-heading">Provisions for ajax page load events</h3>
-				<p class="ui-li-desc">See nicem.js</p>
-			</li>
-			<li class="ui-li ui-li-static ui-body-a">
-				<h3 class="ui-li-heading">Basic generic NICE styles</h3>
-				<p class="ui-li-desc">See nicem.css</p>	
-			</li>
-			<li class="ui-li ui-li-static ui-body-a">
-				<h3 class="ui-li-heading">Basic HTML5 layout</h3>
-				<p class="ui-li-desc">See index.html</p>
-			</li>
-		</ul>
+	  
+	  <div data-role="fieldcontain">
+        <label for="search">Search Input:</label>
+        <input type="search" name="password" id="search" value="" />
+        <p>
+    			<a href="#" data-role="button" id="searchbutton">Search</a>
+    		</p>
+    </div>
+	  
+		<ul data-role="listview" class="ui-listview" id="searchresults">
+		  </ul>
 		<p>&nbsp;</p>
-		<p>
-			<a href="sample.html" data-role="button">Sample Button</a>
-		</p>	
+			
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
